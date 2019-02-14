@@ -40,7 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let presentedViewController = self.window?.rootViewController?.presentedViewController
         
         presentedViewController?.present(viewController, animated: true) {
-            self.window?.rootViewController = viewController
+            self.window?.rootViewController?.dismiss(animated: false) {
+                self.window?.rootViewController = viewController
+            }
         }
     }
 
