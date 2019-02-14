@@ -32,7 +32,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     @objc func done(notification: Notification) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
-        self.window?.rootViewController = storyboard.instantiateInitialViewController()
+        
+        guard let viewController = storyboard.instantiateInitialViewController() else {
+            return
+        }
+
+        let presentedViewController = self.window?.rootViewController?.presentedViewController
+        
+        presentedViewController?.present(viewController, animated: true) {
+            self.window?.rootViewController = viewController
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
