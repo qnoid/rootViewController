@@ -10,9 +10,4 @@ import UIKit
 
 class DoneViewController: UIViewController {
 
-    static let NotificationDone = NSNotification.Name(rawValue: "Done")
-    
-    @IBAction func didTouchUpInsideDone(_ sender: Any) {
-        NotificationCenter.default.post(name: DoneViewController.NotificationDone, object: nil)
-    }
 }

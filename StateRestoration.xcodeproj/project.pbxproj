@@ -15,6 +15,7 @@
 		BD99459322134C6F005BC403 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99459222134C6F005BC403 /* DoneViewController.swift */; };
 		BD99459822134C70005BC403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD99459722134C70005BC403 /* Assets.xcassets */; };
 		BD99459B22134C70005BC403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD99459922134C70005BC403 /* LaunchScreen.storyboard */; };
+		BD9AC1872216D3AB00556E08 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9AC1862216D3AB00556E08 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BD99459722134C70005BC403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD99459A22134C70005BC403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD99459C22134C70005BC403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9AC1862216D3AB00556E08 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BD99459C22134C70005BC403 /* Info.plist */,
 				BD225928221578D800FCB83B /* RegisterViewController.swift */,
 				BD22592C2215A46400FCB83B /* MainViewController.swift */,
+				BD9AC1862216D3AB00556E08 /* RootViewController.swift */,
 			);
 			path = StateRestoration;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9AC1872216D3AB00556E08 /* RootViewController.swift in Sources */,
 				BD225929221578D800FCB83B /* RegisterViewController.swift in Sources */,
 				BD99459322134C6F005BC403 /* DoneViewController.swift in Sources */,
 				BD99459122134C6F005BC403 /* AppDelegate.swift in Sources */,
