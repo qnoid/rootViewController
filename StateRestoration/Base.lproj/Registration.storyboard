@@ -14,26 +14,13 @@
         <scene sceneID="0uM-lG-wRQ">
             <objects>
                 <viewController storyboardIdentifier="RootViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NuA-b6-cnl" customClass="RootViewController" customModule="StateRestoration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aji-0k-9il">
+                    <containerView key="view" opaque="NO" contentMode="scaleToFill" id="rZh-4y-kUS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MT-2h-iqN">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <connections>
-                                    <segue destination="FnS-9O-MvI" kind="embed" id="L0f-qq-ILK"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="QoH-j3-nq9" firstAttribute="trailing" secondItem="7MT-2h-iqN" secondAttribute="trailing" id="Akp-gM-mo4"/>
-                            <constraint firstItem="7MT-2h-iqN" firstAttribute="top" secondItem="QoH-j3-nq9" secondAttribute="top" id="Ath-ZO-3BR"/>
-                            <constraint firstItem="7MT-2h-iqN" firstAttribute="leading" secondItem="QoH-j3-nq9" secondAttribute="leading" id="KML-Kn-Ki9"/>
-                            <constraint firstItem="QoH-j3-nq9" firstAttribute="bottom" secondItem="7MT-2h-iqN" secondAttribute="bottom" id="goz-ij-P0O"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="QoH-j3-nq9"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <segue destination="FnS-9O-MvI" kind="embed" id="Mor-5b-wFR"/>
+                        </connections>
+                    </containerView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndl-my-QRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,11 +31,11 @@
             <objects>
                 <viewController restorationIdentifier="RegisterViewController" id="FnS-9O-MvI" customClass="RegisterViewController" customModule="StateRestoration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmx-DX-bvd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIt-Ov-n4D">
-                                <rect key="frame" x="131.5" y="259" width="57" height="30"/>
+                                <rect key="frame" x="131.5" y="269" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <segue destination="NfU-5r-RAD" kind="presentation" id="WSn-m5-Cr1"/>
@@ -72,7 +59,7 @@
             <objects>
                 <viewController restorationIdentifier="PurpleViewController" id="LRX-ty-EZw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uSS-2O-6vd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="GtJ-E4-2SF"/>
@@ -100,7 +87,7 @@
             <objects>
                 <viewController restorationIdentifier="BlueViewController" id="eHI-2S-fUH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pxZ-rY-mwf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5Ja-rO-Tgi"/>
@@ -122,7 +109,7 @@
             <objects>
                 <viewController restorationIdentifier="GreenViewController" id="Nu1-3w-hlI" customClass="DoneViewController" customModule="StateRestoration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dvd-hS-lhQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.80392156859999997" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5v8-id-m1j"/>

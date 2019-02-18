@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RootViewController: UIViewController {
 
     override func encodeRestorableState(with coder: NSCoder) {
@@ -34,12 +35,25 @@ class RootViewController: UIViewController {
         
         switch (registerViewController, mainViewController) {
         case (let registerViewController?, let mainViewController?):
-            self.transition(from: registerViewController, to: mainViewController)
+            self.switch(source: registerViewController, destination: mainViewController)
         default:
-            return
+            break
         }
         
         super.viewDidLayoutSubviews()    
+    }
+
+    private func `switch`(source: UIViewController, destination: UIViewController) {
+        
+        source.willMove(toParent: nil)
+        
+        destination.view.frame = self.view.bounds
+        self.view.addSubview(destination.view)
+        
+        source.view.removeFromSuperview()
+        source.removeFromParent()
+        
+        destination.didMove(toParent: self)
     }
 
     private func transition(from: UIViewController, to: UIViewController) {
